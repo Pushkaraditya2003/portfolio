@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0f19">
+    <title>Pushkaraditya Singh — Developer & Data Scientist</title>
+    <meta name="description" content="Pushkaraditya Singh — CS Engineer, Data Scientist, ML Developer. Portfolio showcasing projects, skills, and expertise.">
+    <meta property="og:title" content="Pushkaraditya Singh — Developer & Data Scientist">
+    <meta property="og:description" content="Portfolio showcasing Data Science, Machine Learning, and Full-Stack Engineering projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Pushkaraditya2003">
+    <meta property="og:site_name" content="Pushkaraditya's Portfolio">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+    <!-- Subtle grain overlay for premium texture -->
+    <div class="noise-overlay"></div>
+    
+    <!-- Subtle animated grid bg -->
+    <canvas id="grid-bg"></canvas>
+
+    <!-- ===== NAV ===== -->
+    <header class="nav" id="nav">
+        <div class="nav__bar">
+            <a href="#" class="nav__logo"><span class="logo-bracket">&lt;</span>PS<span class="logo-bracket"> /&gt;</span></a>
+            <nav class="nav__links" id="nav-links">
+                <a href="#about" class="nav__a">About</a>
+                <a href="#proficiency" class="nav__a">Skills</a>
+                <a href="#work" class="nav__a">Projects</a>
+                <a href="#resume" class="nav__a">Resume</a>
+                <a href="#journey" class="nav__a">Journey</a>
+                <a href="#contact" class="nav__a nav-cta"><i data-lucide="message-square" style="width:14px;height:14px"></i> Contact</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div class="hero__grid">
+                <div class="hero__left anim">
+                    <div class="hero__eyebrow">
+                        <span class="status-dot"></span>
+                        <span>Open to Opportunities</span>
+                    </div>
+
+                    <h1 class="hero__h1">
+                        Hi, I'm <span class="text-gradient">Pushkaraditya</span>
+                    </h1>
+
+                    <div class="hero__subtitle">
+                        <span class="code-prompt">~$</span>
+                        <span class="type-text" id="type-text" aria-live="polite" aria-atomic="true"></span><span class="type-cursor"></span>
+                    </div>
+
+                    <p class="hero__p">CS Engineering student at LPU with a Dual Diploma from IIT Madras. I build intelligent systems at the intersection of <strong>Machine Learning</strong>, <strong>Data Science</strong>, and <strong>Full-Stack Development</strong>.</p>
+
+                    <div class="hero__btns">
+                        <a href="#work" class="btn btn-primary"><i data-lucide="folder-open" style="width:16px;height:16px"></i> View Projects</a>
+                        <a href="resume.pdf" download="Pushkaraditya_Singh_Resume.pdf" class="btn btn-ghost"><i data-lucide="download" style="width:16px;height:16px"></i> Download CV</a>
+                        <a href="https://github.com/Pushkaraditya2003" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"><i data-lucide="github" style="width:16px;height:16px"></i> GitHub</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <span class="metric-val" data-target="5">0</span><span class="metric-plus">+</span>
+                            <span class="metric-lbl">Projects Shipped</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val" data-target="6">0</span>
+                            <span class="metric-lbl">Languages</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val" data-target="3">0</span>
+                            <span class="metric-lbl">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__right anim d2">
+                    <div class="profile-card">
+                        <div class="pc-glow"></div>
+                        <div class="pc-header">
+                            <div class="pc-dots"><span></span><span></span><span></span></div>
+                            <span class="pc-title">profile.tsx</span>
+                        </div>
+                        <div class="pc-body">
+                            <div class="pc-avatar">
+                                <img src="photo.jpg" alt="Pushkaraditya Singh" loading="lazy" onerror="this.onerror=null; this.src='https://github.com/Pushkaraditya2003.png';">
+                            </div>
+                            <h3 class="pc-name">Pushkaraditya Singh</h3>
+                            <p class="pc-role">CS Engineer &amp; Data Scientist</p>
+                            <div class="pc-tags">
+                                <span>Machine Learning</span>
+                                <span>Data Science</span>
+                                <span>Full-Stack</span>
+                            </div>
+                            <div class="pc-socials">
+                                <a href="https://github.com/Pushkaraditya2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                                <a href="https://linkedin.com/in/pushkaradityasingh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="mailto:pushkarthakur2503@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-strip">
+                <div class="tech-strip__inner">
+                    <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Pandas</span><span>Power BI</span><span>Flask</span><span>Streamlit</span><span>Git</span><span>MySQL</span><span>XGBoost</span><span>NumPy</span><span>JavaScript</span>
+                    <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Pandas</span><span>Power BI</span><span>Flask</span><span>Streamlit</span><span>Git</span><span>MySQL</span><span>XGBoost</span><span>NumPy</span><span>JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="sect" id="about">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> About</div>
+                    <h2 class="sect__title">Background &amp; Expertise</h2>
+                    <p class="sect__sub">A brief look at who I am and what drives me.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text anim">
+                        <p>I am a highly motivated Computer Science and Engineering student at Lovely Professional University, pursuing a dual Diploma in Programming and Data Science from the Indian Institute of Technology (IIT) Madras.</p>
+                        <p>With mastery over the full data-to-model pipeline — from cleaning messy datasets to building, tuning, and deploying ML models — I deliver reliable, actionable insights.</p>
+                        <p>My foundation in Data Structures, Algorithms, and Object-Oriented Programming enables me to architect elegant, scalable solutions for complex real-world problems.</p>
+                    </div>
+                    <div class="about-cards anim d1">
+                        <div class="info-card">
+                            <div class="ic-icon"><i data-lucide="graduation-cap"></i></div>
+                            <div><h4>B.Tech CSE</h4><p>Lovely Professional University</p></div>
+                        </div>
+                        <div class="info-card">
+                            <div class="ic-icon purple"><i data-lucide="award"></i></div>
+                            <div><h4>Dual Diploma</h4><p>IIT Madras — Programming &amp; Data Science</p></div>
+                        </div>
+                        <div class="info-card">
+                            <div class="ic-icon teal"><i data-lucide="cpu"></i></div>
+                            <div><h4>Core Focus</h4><p>ML · Data Analysis · Full-Stack Development</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROFICIENCY ===== -->
+        <section class="sect sect--alt" id="proficiency">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Skills</div>
+                    <h2 class="sect__title">Proficiency Metrics</h2>
+                    <p class="sect__sub">Technical competence across languages, frameworks, and tools.</p>
+                </div>
+                <div class="prof-grid">
+                    <div class="prof-card anim">
+                        <div class="prof-card__head"><i data-lucide="code" class="pci"></i><h3>Languages</h3></div>
+                        <div class="bars">
+                            <div class="bar"><span class="bar-name">Python</span><div class="bar-track"><div class="bar-fill blue" data-width="92"></div></div><span class="bar-val">92%</span></div>
+                            <div class="bar"><span class="bar-name">Java</span><div class="bar-track"><div class="bar-fill teal" data-width="75"></div></div><span class="bar-val">75%</span></div>
+                            <div class="bar"><span class="bar-name">C++</span><div class="bar-track"><div class="bar-fill teal" data-width="70"></div></div><span class="bar-val">70%</span></div>
+                            <div class="bar"><span class="bar-name">JavaScript</span><div class="bar-track"><div class="bar-fill purple" data-width="68"></div></div><span class="bar-val">68%</span></div>
+                            <div class="bar"><span class="bar-name">HTML / CSS</span><div class="bar-track"><div class="bar-fill purple" data-width="80"></div></div><span class="bar-val">80%</span></div>
+                            <div class="bar"><span class="bar-name">C</span><div class="bar-track"><div class="bar-fill teal" data-width="65"></div></div><span class="bar-val">65%</span></div>
+                        </div>
+                    </div>
+                    <div class="prof-card anim d1">
+                        <div class="prof-card__head"><i data-lucide="brain-circuit" class="pci purple"></i><h3>ML &amp; Data Science</h3></div>
+                        <div class="bars">
+                            <div class="bar"><span class="bar-name">Pandas / NumPy</span><div class="bar-track"><div class="bar-fill blue" data-width="90"></div></div><span class="bar-val">90%</span></div>
+                            <div class="bar"><span class="bar-name">Scikit-learn</span><div class="bar-track"><div class="bar-fill blue" data-width="85"></div></div><span class="bar-val">85%</span></div>
+                            <div class="bar"><span class="bar-name">TensorFlow</span><div class="bar-track"><div class="bar-fill teal" data-width="70"></div></div><span class="bar-val">70%</span></div>
+                            <div class="bar"><span class="bar-name">XGBoost</span><div class="bar-track"><div class="bar-fill teal" data-width="78"></div></div><span class="bar-val">78%</span></div>
+                            <div class="bar"><span class="bar-name">Matplotlib / Seaborn</span><div class="bar-track"><div class="bar-fill purple" data-width="88"></div></div><span class="bar-val">88%</span></div>
+                            <div class="bar"><span class="bar-name">PyTorch</span><div class="bar-track"><div class="bar-fill purple" data-width="60"></div></div><span class="bar-val">60%</span></div>
+                        </div>
+                    </div>
+                    <div class="prof-card anim d2">
+                        <div class="prof-card__head"><i data-lucide="wrench" class="pci teal"></i><h3>Frameworks &amp; Tools</h3></div>
+                        <div class="bars">
+                            <div class="bar"><span class="bar-name">Flask</span><div class="bar-track"><div class="bar-fill blue" data-width="75"></div></div><span class="bar-val">75%</span></div>
+                            <div class="bar"><span class="bar-name">Streamlit</span><div class="bar-track"><div class="bar-fill blue" data-width="82"></div></div><span class="bar-val">82%</span></div>
+                            <div class="bar"><span class="bar-name">Git &amp; GitHub</span><div class="bar-track"><div class="bar-fill teal" data-width="85"></div></div><span class="bar-val">85%</span></div>
+                            <div class="bar"><span class="bar-name">Power BI</span><div class="bar-track"><div class="bar-fill purple" data-width="80"></div></div><span class="bar-val">80%</span></div>
+                            <div class="bar"><span class="bar-name">Jupyter</span><div class="bar-track"><div class="bar-fill teal" data-width="90"></div></div><span class="bar-val">90%</span></div>
+                            <div class="bar"><span class="bar-name">Excel</span><div class="bar-track"><div class="bar-fill purple" data-width="78"></div></div><span class="bar-val">78%</span></div>
+                        </div>
+                    </div>
+                    <div class="prof-card anim d3">
+                        <div class="prof-card__head"><i data-lucide="database" class="pci"></i><h3>Databases &amp; Core CS</h3></div>
+                        <div class="bars">
+                            <div class="bar"><span class="bar-name">MySQL</span><div class="bar-track"><div class="bar-fill blue" data-width="80"></div></div><span class="bar-val">80%</span></div>
+                            <div class="bar"><span class="bar-name">MongoDB</span><div class="bar-track"><div class="bar-fill teal" data-width="65"></div></div><span class="bar-val">65%</span></div>
+                            <div class="bar"><span class="bar-name">Data Structures</span><div class="bar-track"><div class="bar-fill blue" data-width="85"></div></div><span class="bar-val">85%</span></div>
+                            <div class="bar"><span class="bar-name">Algorithms</span><div class="bar-track"><div class="bar-fill teal" data-width="82"></div></div><span class="bar-val">82%</span></div>
+                            <div class="bar"><span class="bar-name">OOP</span><div class="bar-track"><div class="bar-fill purple" data-width="88"></div></div><span class="bar-val">88%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="sect" id="work">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Projects</div>
+                    <h2 class="sect__title">Featured Work</h2>
+                    <p class="sect__sub">Real-world projects demonstrating end-to-end problem solving.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="proj anim">
+                        <div class="proj__ribbon blue">Machine Learning</div>
+                        <div class="proj__body">
+                            <div class="proj__meta"><span>Aug 2025</span></div>
+                            <h3>Telecom Churn Prediction</h3>
+                            <p>End-to-end ML pipeline predicting customer churn with ensemble methods. Deployed via interactive Streamlit dashboard.</p>
+                            <div class="proj__stack"><span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Streamlit</span></div>
+                            <a href="https://github.com/Pushkaraditya2003/telco-customer-churn" target="_blank" rel="noopener noreferrer" class="proj__link"><i data-lucide="github" style="width:14px;height:14px"></i> View Source</a>
+                        </div>
+                    </article>
+                    <article class="proj anim d1">
+                        <div class="proj__ribbon teal">Data Analysis</div>
+                        <div class="proj__body">
+                            <div class="proj__meta"><span>2025</span></div>
+                            <h3>Campus Satisfaction Dashboard</h3>
+                            <p>Power BI dashboard with drill-down capabilities for institution-level insights across student satisfaction surveys.</p>
+                            <div class="proj__stack"><span>Power BI</span><span>DAX</span><span>Analytics</span></div>
+                            <a href="https://github.com/Pushkaraditya2003/PowerBi-Student-Campus-Satifaction-Dashboard" target="_blank" rel="noopener noreferrer" class="proj__link"><i data-lucide="github" style="width:14px;height:14px"></i> View Source</a>
+                        </div>
+                    </article>
+                    <article class="proj anim d2">
+                        <div class="proj__ribbon teal">Data Analysis</div>
+                        <div class="proj__body">
+                            <div class="proj__meta"><span>Apr 2025</span></div>
+                            <h3>Petroleum Trade Flow Dashboard</h3>
+                            <p>Interactive Excel dashboard analyzing India's crude oil trade with dynamic slicers and PivotCharts.</p>
+                            <div class="proj__stack"><span>Excel</span><span>Pivot Tables</span><span>Data Cleaning</span></div>
+                            <a href="https://github.com/Pushkaraditya2003/Crude-oil-import-and-export-Excel-project" target="_blank" rel="noopener noreferrer" class="proj__link"><i data-lucide="github" style="width:14px;height:14px"></i> View Source</a>
+                        </div>
+                    </article>
+                    <article class="proj anim d3">
+                        <div class="proj__ribbon teal">Data Analysis</div>
+                        <div class="proj__body">
+                            <div class="proj__meta"><span>Apr 2025</span></div>
+                            <h3>India Commodity Exports Analysis</h3>
+                            <p>Python analytics pipeline analyzing India's exports with interactive Matplotlib &amp; Seaborn visualizations.</p>
+                            <div class="proj__stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+                            <a href="https://github.com/Pushkaraditya2003/Commodity-wise-exports-for-the-year-2022-23-of-India" target="_blank" rel="noopener noreferrer" class="proj__link"><i data-lucide="github" style="width:14px;height:14px"></i> View Source</a>
+                        </div>
+                    </article>
+                    <article class="proj anim">
+                        <div class="proj__ribbon purple">Full Stack</div>
+                        <div class="proj__body">
+                            <div class="proj__meta"><span>2025</span></div>
+                            <h3>Medical Appointment Chatbot</h3>
+                            <p>Full-stack NLP chatbot automating medical appointment bookings with a conversational web interface.</p>
+                            <div class="proj__stack"><span>Python</span><span>NLP</span><span>HTML/CSS</span><span>JavaScript</span></div>
+                            <a href="https://github.com/Pushkaraditya2003/Chatbot-For-Medical-Appointment-Booking" target="_blank" rel="noopener noreferrer" class="proj__link"><i data-lucide="github" style="width:14px;height:14px"></i> View Source</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="center anim" style="margin-top:2rem">
+                    <a href="https://github.com/Pushkaraditya2003" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"><i data-lucide="external-link" style="width:15px;height:15px"></i> View All Repositories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESUME ===== -->
+        <section class="sect sect--alt" id="resume">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Resume</div>
+                    <h2 class="sect__title">My Resume</h2>
+                </div>
+                <div class="resume-card anim">
+                    <div class="resume-left">
+                        <div class="resume-icon"><i data-lucide="file-text" style="width:44px;height:44px"></i></div>
+                        <h3>Pushkaraditya Singh</h3>
+                        <p>CS Engineer · Data Scientist · ML Developer</p>
+                    </div>
+                    <div class="resume-right">
+                        <h3>Want the full picture?</h3>
+                        <p>Download or view my complete resume with detailed experience, education, skills, and project portfolio.</p>
+                        <div class="resume-actions">
+                            <a href="resume.pdf" download="Pushkaraditya_Singh_Resume.pdf" class="btn btn-primary"><i data-lucide="download" style="width:15px;height:15px"></i> Download CV (PDF)</a>
+                            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"><i data-lucide="eye" style="width:15px;height:15px"></i> View Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== JOURNEY ===== -->
+        <section class="sect" id="journey">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Journey</div>
+                    <h2 class="sect__title">Education &amp; Credentials</h2>
+                </div>
+                <div class="journey-grid">
+                    <div class="journey-col anim">
+                        <h3 class="jc-title"><i data-lucide="book-open" style="width:18px;height:18px"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Jan 2025 – Present</span><h4>Dual Diploma — Data Science &amp; Programming</h4><p>IIT Madras</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Aug 2023 – Present</span><h4>B.Tech — CS &amp; Engineering</h4><p>Lovely Professional University · CGPA: 6.8</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">2020 – 2022</span><h4>Intermediate</h4><p>Gayatri Vidyapeeth, Haridwar · 70%</p></div></div>
+                        </div>
+                    </div>
+                    <div class="journey-col anim d1">
+                        <h3 class="jc-title"><i data-lucide="trophy" style="width:18px;height:18px"></i> Certifications</h3>
+                        <div class="timeline">
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Dec 2025</span><h4>Foundational Level — Prog &amp; Data Science</h4><p>IIT Madras BS Degree</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Jul 2025</span><h4>Machine Learning Made Easy</h4><p>Centre for Professional Dev, LPU</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">2024</span><h4>Tech Workshops</h4><p>"The Secure Way" AWS · "HeckEthix" Ethical Hacking</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="sect sect--alt" id="contact">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Contact</div>
+                    <h2 class="sect__title">Let's Work Together</h2>
+                    <p class="sect__sub">Have a project idea or opportunity? I'd love to hear from you.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info anim">
+                        <!-- Custom Copy Email Card -->
+                        <div class="contact-card group" id="email-card" title="Click to copy email" role="button" tabindex="0">
+                            <div class="cc-icon"><i data-lucide="mail"></i></div>
+                            <div><strong>Email</strong><span id="email-text">pushkarthakur2503@gmail.com</span></div>
+                            <i data-lucide="copy" class="cc-arrow copy-icon"></i>
+                        </div>
+                        <a href="https://linkedin.com/in/pushkaradityasingh" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="cc-icon purple"><i data-lucide="linkedin"></i></div>
+                            <div><strong>LinkedIn</strong><span>/in/pushkaradityasingh</span></div>
+                            <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+                        </a>
+                        <a href="https://github.com/Pushkaraditya2003" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="cc-icon teal"><i data-lucide="github"></i></div>
+                            <div><strong>GitHub</strong><span>Pushkaraditya2003</span></div>
+                            <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+                        </a>
+                    </div>
+                    <form class="contact-form anim d1" id="contact-form" action="https://formsubmit.co/pushkarthakur2503@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Portfolio Contact Message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <h3 class="form-title">Send a Message</h3>
+                        <div class="fg"><label for="fn">Name</label><input type="text" id="fn" name="name" placeholder="Your full name" required></div>
+                        <div class="fg"><label for="fe">Email</label><input type="email" id="fe" name="email" placeholder="you@example.com" required></div>
+                        <div class="fg"><label for="fm">Message</label><textarea id="fm" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full" id="sbtn"><i data-lucide="send" style="width:15px;height:15px"></i> Send Message</button>
+                        <p class="form-hint">Messages go directly to my inbox. I reply within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">&copy; 2026 Pushkaraditya Singh. Handcrafted with purpose.</p>
+            <div class="footer__socials">
+                <a href="https://github.com/Pushkaraditya2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/pushkaradityasingh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:pushkarthakur2503@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="btt" id="btt" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+</html>
