@@ -402,11 +402,14 @@ ul{list-style:none}img{display:block;max-width:100%}
 .tl-date{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--blue);margin-bottom:.2rem}
 .tl-body h4{font-size:.9rem;font-weight:600;margin-bottom:.1rem}
 .tl-body p{font-size:.82rem;color:var(--t4)}
+.tl-link{display:inline-flex;align-items:center;gap:.3rem;margin-top:.4rem;font-size:.75rem;color:var(--blue);font-weight:500;font-family:var(--mono);transition:.2s}
+.tl-link:hover{color:var(--t1)}
 
 /* ===========================================================
    CONTACT
    =========================================================== */
 .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:2.5rem}
+.platforms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
 .contact-info{display:flex;flex-direction:column;gap:.8rem}
 
 .contact-card{
@@ -415,6 +418,8 @@ ul{list-style:none}img{display:block;max-width:100%}
     border-radius:var(--r);transition:.3s;
 }
 .contact-card:hover{border-color:var(--border-hi);transform:translateX(5px);box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.hover-glow-amber:hover { border-color: rgba(245,158,11,0.6); box-shadow: 0 4px 20px rgba(245,158,11,0.15); transform: translateY(-3px) translateX(0); }
+.hover-glow-green:hover { border-color: rgba(34,197,94,0.6); box-shadow: 0 4px 20px rgba(34,197,94,0.15); transform: translateY(-3px) translateX(0); }
 .contact-card.group:active{transform:translateX(0);box-shadow:none} /* For copy UX */
 
 .cc-icon{

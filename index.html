@@ -70,16 +70,18 @@
                     </div>
 
                     <div class="hero-metrics">
-                        <div class="metric">
-                            <span class="metric-val" data-target="5">0</span><span class="metric-plus">+</span>
+                        <div class="metric" style="align-items: flex-start;">
+                            <div class="metric-head" style="display:flex; align-items:center;">
+                                <span class="metric-val" data-target="5">0</span><span class="metric-plus" style="margin-left:2px; transform:translateY(2px)">+</span>
+                            </div>
                             <span class="metric-lbl">Projects Shipped</span>
                         </div>
-                        <div class="metric">
-                            <span class="metric-val" data-target="6">0</span>
+                        <div class="metric" style="align-items: flex-start;">
+                            <div class="metric-head"><span class="metric-val" data-target="6">0</span></div>
                             <span class="metric-lbl">Languages</span>
                         </div>
-                        <div class="metric">
-                            <span class="metric-val" data-target="3">0</span>
+                        <div class="metric" style="align-items: flex-start;">
+                            <div class="metric-head"><span class="metric-val" data-target="3">0</span></div>
                             <span class="metric-lbl">Certifications</span>
                         </div>
                     </div>
@@ -154,7 +156,7 @@
         </section>
 
         <!-- ===== PROFICIENCY ===== -->
-        <section class="sect sect--alt" id="proficiency">
+        <section class="sect sect--alt" id="proficiency" style="padding-bottom: 3rem;">
             <div class="container">
                 <div class="sect__head anim">
                     <div class="sect__label"><span class="sect__dot"></span> Skills</div>
@@ -205,6 +207,29 @@
                             <div class="bar"><span class="bar-name">OOP</span><div class="bar-track"><div class="bar-fill purple" data-width="88"></div></div><span class="bar-val">88%</span></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CODING PLATFORMS ===== -->
+        <section class="sect sect--alt" style="padding-top: 0; padding-bottom: 6rem;" id="coding">
+            <div class="container">
+                <div class="sect__head anim">
+                    <div class="sect__label"><span class="sect__dot"></span> Profiles</div>
+                    <h2 class="sect__title">Coding Platforms</h2>
+                    <p class="sect__sub">Data Structures and Algorithm practice tracks.</p>
+                </div>
+                <div class="platforms-grid">
+                    <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" class="contact-card anim hover-glow-amber">
+                        <div class="cc-icon" style="color:#f59e0b; background:rgba(245,158,11,.1); border:1px solid rgba(245,158,11,.2)"><i data-lucide="code-2"></i></div>
+                        <div><strong>LeetCode</strong><span>View Profile</span></div>
+                        <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+                    </a>
+                    <a href="https://auth.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer" class="contact-card anim d1 hover-glow-green">
+                        <div class="cc-icon" style="color:#22c55e; background:rgba(34,197,94,.1); border:1px solid rgba(34,197,94,.2)"><i data-lucide="braces"></i></div>
+                        <div><strong>GeeksForGeeks</strong><span>View Profile</span></div>
+                        <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -312,19 +337,61 @@
                         <h3 class="jc-title"><i data-lucide="book-open" style="width:18px;height:18px"></i> Education</h3>
                         <div class="timeline">
                             <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Jan 2025 – Present</span><h4>Dual Diploma — Data Science &amp; Programming</h4><p>IIT Madras</p></div></div>
-                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Aug 2023 – Present</span><h4>B.Tech — CS &amp; Engineering</h4><p>Lovely Professional University · CGPA: 6.8</p></div></div>
-                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">2020 – 2022</span><h4>Intermediate</h4><p>Gayatri Vidyapeeth, Haridwar · 70%</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Aug 2023 – Present</span><h4>B.Tech — CS &amp; Engineering</h4><p>Lovely Professional University</p></div></div>
+                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">2020 – 2022</span><h4>Intermediate</h4><p>Gayatri Vidyapeeth, Haridwar</p></div></div>
                         </div>
                     </div>
                     <div class="journey-col anim d1">
                         <h3 class="jc-title"><i data-lucide="trophy" style="width:18px;height:18px"></i> Certifications</h3>
                         <div class="timeline">
-                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Dec 2025</span><h4>Foundational Level — Prog &amp; Data Science</h4><p>IIT Madras BS Degree</p></div></div>
-                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">Jul 2025</span><h4>Machine Learning Made Easy</h4><p>Centre for Professional Dev, LPU</p></div></div>
-                            <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><span class="tl-date">2024</span><h4>Tech Workshops</h4><p>"The Secure Way" AWS · "HeckEthix" Ethical Hacking</p></div></div>
+                            <div class="tl-item">
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <span class="tl-date">Dec 2025</span>
+                                    <h4>Foundational Level — Prog &amp; Data Science</h4>
+                                    <p>IIT Madras BS Degree</p>
+                                    <a href="https://www.linkedin.com/in/pushkaradityasingh/details/certifications/" target="_blank" rel="noopener noreferrer" class="tl-link"><i data-lucide="external-link" style="width:12px;height:12px"></i> View Credential</a>
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <span class="tl-date">Jul 2025</span>
+                                    <h4>Machine Learning Made Easy</h4>
+                                    <p>Centre for Professional Dev, LPU</p>
+                                    <a href="https://www.linkedin.com/in/pushkaradityasingh/details/certifications/" target="_blank" rel="noopener noreferrer" class="tl-link"><i data-lucide="external-link" style="width:12px;height:12px"></i> View Credential</a>
+                                </div>
+                            </div>
+                            <div class="tl-item">
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <span class="tl-date">2023</span>
+                                    <h4>C Programming Certification</h4>
+                                    <p>Certified in core C programming constructs and logic building.</p>
+                                    <a href="https://www.linkedin.com/in/pushkaradityasingh/details/certifications/" target="_blank" rel="noopener noreferrer" class="tl-link"><i data-lucide="external-link" style="width:12px;height:12px"></i> View Credential</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- New row for extracurriculars -->
+                <div class="journey-grid" style="grid-template-columns: 1fr; margin-top: 3.5rem;">
+                    <div class="journey-col anim d2">
+                        <h3 class="jc-title"><i data-lucide="activity" style="width:18px;height:18px"></i> Extracurriculars &amp; Workshops</h3>
+                        <div class="timeline">
+                            <div class="tl-item">
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <span class="tl-date">2024</span>
+                                    <h4>Tech &amp; Security Workshops</h4>
+                                    <p>Active participant in "The Secure Way" (focused on AWS infrastructure), and "HeckEthix" (covering foundational Ethical Hacking).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
